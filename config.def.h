@@ -14,12 +14,11 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "base", "web", "dev" };
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            True,        -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       False,       -1 },
+	{ NULL,       NULL,       NULL,       1 << 8,       False,       -1 },
 };
 
 /* layout(s) */
@@ -29,8 +28,8 @@ static const Bool resizehints = True; /* True means respect size hints in tiled 
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ "[T]",      tile },    /* first entry is default */
+	{ "[F]",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
 
