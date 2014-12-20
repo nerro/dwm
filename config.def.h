@@ -4,7 +4,7 @@
 static const char font[]            = "Liberation Mono:size=10:antialias=true";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
-static const char normfgcolor[]     = "#bbbbbb";
+static const char normfgcolor[]     = "#aaaaaa";
 static const char selbordercolor[]  = "#005577";
 static const char selbgcolor[]      = "#005577";
 static const char selfgcolor[]      = "#eeeeee";
@@ -46,7 +46,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "uxterm", NULL };
+static const char *termcmd[]  = { "urxvtc", NULL };
 
 static Key keys[] = {
   /* modifier                     key        function        argument */
