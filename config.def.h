@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]            = "Liberation Mono:size=10:antialias=true";
+static const char font[]            = "Liberation Mono:size=8:antialias=true";
 static const char normbordercolor[] = "#000000";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#aaaaaa";
